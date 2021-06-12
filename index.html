@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Loop 1 - Challenge</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./main.css" />
 </head>
+
 <body>
-  <!--
-    Welcome to your first FrontLoops challenge.
-    Today we gonna build a neat landing page for Apple Watch.
-    Just try to do your best and use the techniques from previous lessons.
+  <header>
+    <div class="container header__container">
+      <a class="apple-link" href="">
+        <img class="apple" src="./img/logo.svg" alt="">
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__"><a href="#" class="nav__link">Offers</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">Services</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">How can we help you?</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    Good luck!
-
-    P.S.:
-    If you want some more - try splitting your css into several files
-    (one file for each design element like button, search input etc.)
-    and use @import to get them combined in the main.css file.
-  -->
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__box">
+        <h1 class="hero__title">Freedom calls</h1>
+        <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa maxime aut
+          quasi quo ratione quisquam perspiciatis, praesentium inventore facere, modi sint tempora sed quam?
+          Voluptatem
+          mollitia sed pariatur reiciendis.</p>
+        <a class="hero__btn " href="#">WATCH THE KEYNOTE</a>
+      </div>
+      <img class="hero__img" src="./img/watches.jpg" alt="">
+  </section>
 </body>
+
 </html>

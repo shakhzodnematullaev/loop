@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.apple-link {
+    display: block;
+}
+
+.nav {
+
+
+    .apple {
+
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .nav__list {
+
+
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        .nav__link {
+
+            margin-right: 50px;
+            color: rgb(93, 89, 89);
+            text-decoration: none;
+            display: block;
+
+
+        }
+    }
+}
+
+.hero {
+
+
+    .hero__box {
+        margin-top: 150px;
+
+        .hero__title {
+            font-size: 50px;
+        }
+
+        .hero__text {
+            margin-top: 30px;
+            width: 550px;
+            font-size: 20px;
+
+            .hero__text::before {
+                background-color: black;
+                display: block;
+                content: '';
+                width: 5px;
+                height: 50px;
+            }
+        }
+
+
+
+        .hero__btn {
+            color: #fff;
+            text-decoration: none;
+            width: 260px;
+            margin-top: 40px;
+            display: block;
+            background-color: #E6605B;
+            padding: 10px 30px;
+        }
+    }
+
+    .hero__img {
+        position: absolute;
+        right: -155px;
+        top: 100px;
+        display: flex;
+        width: 500px;
+        height: 500px;
+    }
+}
