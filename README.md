@@ -1,9 +1,9 @@
 # Members of group:
 * **Shakhzod (teamlead)** 
-    *Brand section and error correction*
+    * *Brand section and error correction*
 * **kHamidulloh** 
-    *Footer*
+    * *Footer*
 * **Miraziz**
-    *Header and Hero section*
+    * *Header and Hero section*
 * **Otabek** 
-    *Benefits section*
+    * *Benefits section*
