@@ -7,11 +7,18 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Livvic', sans-serif;
+}
+
+.main {
+  width: 100%;
+}
+
 .container {
-  padding: 0 20px;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .header__container {
@@ -24,6 +31,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #555454;
 }
 
 .apple-link {
@@ -49,70 +74,154 @@
 }
 
 .nav .nav__list .nav__link {
-  margin-right: 50px;
+  margin-right: 20px;
   color: #5d5959;
   text-decoration: none;
   display: block;
+  padding: 6px 8px;
 }
 
-.hero .hero__box {
-  margin-top: 150px;
+.nav .nav__list .nav__link:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
 }
 
-.hero .hero__box .hero__title {
+.hero {
+  width: 100%;
+  background-image: url(../img/watches.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -400px bottom 0;
+}
+
+.hero__container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.hero__title {
   font-size: 50px;
 }
 
-.hero .hero__box .hero__text {
+.hero__text {
   margin-top: 30px;
   width: 550px;
   font-size: 20px;
+  position: relative;
+  padding-left: 30px;
 }
 
-.hero .hero__box .hero__text .hero__text::before {
-  background-color: black;
-  display: block;
+.hero__text::before {
   content: '';
-  width: 5px;
-  height: 50px;
+  width: 2px;
+  height: 100%;
+  background-color: #6b6d6d;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.hero .hero__box .hero__btn {
+.hero__btn {
   color: #fff;
   text-decoration: none;
-  width: 260px;
   margin-top: 40px;
-  display: block;
+  display: inline-block;
   background-color: #E6605B;
   padding: 10px 30px;
 }
 
-.hero .hero__img {
-  position: absolute;
-  right: -155px;
-  top: 100px;
+.hero__btn:hover {
+  background-color: #d64646;
+}
+
+.benefits__container {
+  width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
-  height: 500px;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Livvic',sans-serif;
-}
-
-.container {
-  width: 1140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 100px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.benefits-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  list-style: none;
+}
+
+.benefits-item {
+  width: 340px;
+  padding: 15px 10px;
+}
+
+.benefits-title {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.benefits-info {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.learn {
+  color: red;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  padding-left: 45px;
+  position: relative;
+}
+
+.learn::before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.learn:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding-left: 60px;
+}
+
+.learn:hover::before {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  width: 45px;
+}
+
+.span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #585858;
+  margin-right: 10px;
 }
 
 .brand__container {
@@ -127,6 +236,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .brand__box {
@@ -135,8 +245,8 @@ body {
 
 .brand__text {
   width: 100%;
-  padding-left: 45px;
-  font-size: 20px;
+  padding-left: 35px;
+  font-size: 16px;
   line-height: 26px;
   color: #6b6d6d;
   position: relative;
@@ -158,55 +268,72 @@ body {
   color: white;
   width: 150px;
   padding: 12px 30px;
+  background-color: #E6605B;
+}
+
+.brand__link:hover {
   background-color: #d64646;
 }
 
 .brand__title {
   padding: 0;
   margin: 0;
-  font-size: 56px;
-  line-height: 56px;
-  margin-bottom: 50px;
+  font-size: 46px;
+  line-height: 46px;
+  margin-bottom: 40px;
 }
 
 .footer {
   width: 100%;
-  height: 730px;
+  padding: 200px 0;
   background-image: url(/img/runners.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.footer__texts {
+.footer__box {
   width: 460px;
   margin-left: auto;
-  padding-top: 210px;
-  margin-right: 270px;
 }
 
-.footer__texts__title {
-  width: 420px;
+.footer__title {
+  width: 100%;
   color: #fff;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 38px;
+  line-height: 38px;
+  margin-bottom: 45px;
 }
 
-.footer__texts__text {
-  width: 40px;
+.footer__text {
+  width: 100%;
   color: #fff;
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
-  margin-top: 70px;
-  margin-bottom: 45px;
-  border-left: 2px solid #fff;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
 }
 
-.footer__texts__btn {
-  width: 195px;
+.footer__text::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footer__btn {
+  display: inline-block;
   color: #fff;
-  padding: 15px;
-  background-color: #F67E7E;
+  padding: 10px 20px;
+  background-color: #E6605B;
+}
+
+.footer__btn:hover {
+  background-color: #d64646;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+.hero {
+    width: 100%;
+    background-image: url(../img/watches.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right -400px bottom 0;
+}
+
+.hero__container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.hero__title {
+    font-size: 50px;
+}
+
+.hero__text {
+    margin-top: 30px;
+    width: 550px;
+    font-size: 20px;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: rgb(107, 109, 109);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.hero__btn {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #E6605B;
+    padding: 10px 30px;
+
+    &:hover {
+        background-color: rgb(214, 70, 70);
+    }
+}
